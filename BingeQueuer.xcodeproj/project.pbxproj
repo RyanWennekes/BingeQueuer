@@ -14,6 +14,9 @@
 		F03472DB27B3CC8C006DFCA3 /* BingeQueuerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03472DA27B3CC8C006DFCA3 /* BingeQueuerTests.swift */; };
 		F03472E527B3CC8C006DFCA3 /* BingeQueuerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03472E427B3CC8C006DFCA3 /* BingeQueuerUITests.swift */; };
 		F03472E727B3CC8C006DFCA3 /* BingeQueuerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03472E627B3CC8C006DFCA3 /* BingeQueuerUITestsLaunchTests.swift */; };
+		F03472F727B3CD70006DFCA3 /* BingeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03472F627B3CD70006DFCA3 /* BingeRow.swift */; };
+		F03472F927B3CED8006DFCA3 /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03472F827B3CED8006DFCA3 /* Series.swift */; };
+		F03472FB27B3D109006DFCA3 /* SeriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03472FA27B3D109006DFCA3 /* SeriesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		F03472E027B3CC8C006DFCA3 /* BingeQueuerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BingeQueuerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03472E427B3CC8C006DFCA3 /* BingeQueuerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingeQueuerUITests.swift; sourceTree = "<group>"; };
 		F03472E627B3CC8C006DFCA3 /* BingeQueuerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingeQueuerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F03472F627B3CD70006DFCA3 /* BingeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingeRow.swift; sourceTree = "<group>"; };
+		F03472F827B3CED8006DFCA3 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		F03472FA27B3D109006DFCA3 /* SeriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,13 @@
 		F03472C827B3CC8B006DFCA3 /* BingeQueuer */ = {
 			isa = PBXGroup;
 			children = (
+				F03472F427B3CD21006DFCA3 /* View */,
+				F03472F327B3CCE0006DFCA3 /* Model */,
 				F03472C927B3CC8B006DFCA3 /* BingeQueuerApp.swift */,
 				F03472CB27B3CC8B006DFCA3 /* ContentView.swift */,
 				F03472CD27B3CC8C006DFCA3 /* Assets.xcassets */,
 				F03472CF27B3CC8C006DFCA3 /* Preview Content */,
+				F03472FA27B3D109006DFCA3 /* SeriesList.swift */,
 			);
 			path = BingeQueuer;
 			sourceTree = "<group>";
@@ -125,6 +134,30 @@
 				F03472E627B3CC8C006DFCA3 /* BingeQueuerUITestsLaunchTests.swift */,
 			);
 			path = BingeQueuerUITests;
+			sourceTree = "<group>";
+		};
+		F03472F327B3CCE0006DFCA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F03472F827B3CED8006DFCA3 /* Series.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F03472F427B3CD21006DFCA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F03472F527B3CD27006DFCA3 /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F03472F527B3CD27006DFCA3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F03472F627B3CD70006DFCA3 /* BingeRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03472F727B3CD70006DFCA3 /* BingeRow.swift in Sources */,
 				F03472CC27B3CC8B006DFCA3 /* ContentView.swift in Sources */,
+				F03472FB27B3D109006DFCA3 /* SeriesList.swift in Sources */,
+				F03472F927B3CED8006DFCA3 /* Series.swift in Sources */,
 				F03472CA27B3CC8B006DFCA3 /* BingeQueuerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
